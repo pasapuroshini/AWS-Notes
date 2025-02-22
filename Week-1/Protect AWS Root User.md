@@ -1,0 +1,33 @@
+### **AWS Root User Security - Key Notes for Revision**
+
+#### **1\. Authentication vs. Authorization**
+
+*   **Authentication** → Verifies identity (e.g., username + password, fingerprint, tokens)
+    
+*   **Authorization** → Defines actions a user can perform in AWS
+    
+
+#### **2\. AWS Root User**
+
+*   Created with an **email & password** during AWS account creation
+    
+*   **Has complete access** to all AWS services, billing, and personal data
+    
+*   **Two sets of credentials**:✅ **Email & password** → AWS Management Console✅ **Access keys** → AWS CLI or API (Access Key ID + Secret Access Key)
+    
+
+#### **3\. Best Practices for Root User Security**
+
+✅ Use a **strong password**✅ **Never share** root credentials✅ **Disable/delete access keys** for the root user✅ **Do not use root user for daily/admin tasks**✅ **Use IAM users with least privilege instead**
+
+#### **4\. Multi-Factor Authentication (MFA) for Root User**
+
+*   **Single-factor authentication (SFA)** = One method (e.g., password)
+    
+*   **Multi-factor authentication (MFA)** = Two or more authentication methods:✅ **Something you know** → Password, PIN✅ **Something you have** → OTP from mobile app or hardware device✅ **Something you are** → Fingerprint, Face ID
+    
+
+#### **5\. AWS Supported MFA Devices**
+
+
+<img width="679" alt="Screenshot 2025-02-22 at 3 02 37 PM" src="https://github.com/user-attachments/assets/aae12b90-2a8f-431b-9aaa-73c74c791911" />
